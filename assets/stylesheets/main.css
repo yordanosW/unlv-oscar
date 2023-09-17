@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+main {
+    /* outline: 4px solid red; */
+    width: 70vw;
+    margin: 0 auto;
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-weight: bolder;
+}
+
+.main-header-section {
+    /* outline: 3px solid blue; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-content-card {
+    /* outline: 4px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+.card-content {
+    /* padding-left: 40px; */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.main-content-card a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+@media (min-width: 600px) {
+    .card-image,.card-content {
+        max-width: 50%;
+    }
+
+    .main-content-card {
+        /* outline: 4px solid green; */
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .card-content {
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    .main-content-card:nth-child(odd) {
+        flex-direction: row-reverse;
+        
+    }
+
+    .main-content-card:nth-child(odd) .card-content {
+        /* background: red; */
+        padding-left: 0;
+        padding-right: 40px;
+    }
+}
